@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './nav';
+import Nav from './Nav';
 import Resume from './Resume';
 import Contact from './Contact';
 
