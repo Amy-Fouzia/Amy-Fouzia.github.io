@@ -1,15 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Resume from './components/Resume';
-import Contact from './components/Contact';
 
-function App() {
+function Contact() {
   return (
     <Router>
-      <div className="App">
+      <div className="Contact">
         <Nav />
         <Switch>
           <Route path="/home" component={Home} />
@@ -21,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Contact;
