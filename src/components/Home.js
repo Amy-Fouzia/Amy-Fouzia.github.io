@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './components/Nav';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import Nav from './nav';
+import Resume from './Resume';
+import Contact from './Contact';
 
 function Home() {
   return (
