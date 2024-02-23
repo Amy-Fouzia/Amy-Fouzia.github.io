@@ -11,9 +11,15 @@ body {
   src: url('./fonts/EconomicConditions.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Borella';
+  src: url('./fonts/Borella.ttf') format('truetype');
+}
+
 .title-container {
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
+  margin-left: 5%;
 }
 
 .title {
@@ -37,7 +43,8 @@ body {
 }
 
 .navOval {
-  font-family: 'EconomicConditions', sans-serif;
+  font-family: 'Borella', sans-serif;
+  font-size:x-large;
   display: flex; /* Use flexbox */
   justify-content: center; /* Center text horizontally */
   align-items: center; /* Center text vertically */
@@ -68,7 +75,7 @@ body {
 
 .textBox {
   position: absolute;
-  top: 30%;
+  top: 19%;
   left: 50%;
   transform: translateX(-50%);
   width: 84.5%;
@@ -83,3 +90,18 @@ body {
   margin-left: 30px;
 }
 
+.dropdown-arrow {
+  cursor: pointer;
+  margin-right: 5px; /* Adjust spacing as needed */
+}
+
+/* Define arrow direction */
+.right {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
