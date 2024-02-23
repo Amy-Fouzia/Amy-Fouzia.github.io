@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "24d646eee7dd5de57bb806e9ad9a2271",
+    "revision": "84041890620d8ee754d8d279d8c87ee1",
     "url": "/index.html"
   },
   {
-    "revision": "eee535aa394736ffaaa8",
-    "url": "/static/css/main.d6578828.chunk.css"
+    "revision": "0ee2ec99f898f246ff4f",
+    "url": "/static/css/main.b617625f.chunk.css"
   },
   {
     "revision": "ae6b4e52fa506c8f4b55",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.68d536b4.chunk.js"
   },
   {
-    "revision": "eee535aa394736ffaaa8",
-    "url": "/static/js/main.a8bf0018.chunk.js"
+    "revision": "0ee2ec99f898f246ff4f",
+    "url": "/static/js/main.b8bd95cf.chunk.js"
   },
   {
     "revision": "8a5626378c6138c21833",
     "url": "/static/js/runtime~main.cef9ab07.js"
+  },
+  {
+    "revision": "32b2fe229182627adb0e6341d72e2a8f",
+    "url": "/static/media/Borella.32b2fe22.ttf"
   },
   {
     "revision": "6ac2901e1994a46655e815e962b36ea7",
