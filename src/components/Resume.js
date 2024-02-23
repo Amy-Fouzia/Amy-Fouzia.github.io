@@ -1,22 +1,19 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './Nav';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';
+import TextBox from './TextBox';
 
 function Resume() {
   return (
-    <Router>
-      <div className="Resume">
-        <Nav />
-        <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </div>
-    </Router>
+    <div className="Resume">
+      <Routes>
+        <Route path="*" element={<Home />} />
+        <Route path="/resume/*" element={<TextBox />} />
+        <Route path="/contact/*" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
 

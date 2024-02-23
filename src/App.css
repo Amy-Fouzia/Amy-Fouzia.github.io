@@ -51,6 +51,14 @@ body {
     0 3px black, 
     -3px 0 black, 
     0 -3px black;
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s;
+}
+
+.navOval:hover {
+  color: white; 
 }
 
 .navOval.active {
@@ -74,3 +82,4 @@ body {
   margin-top: 70px;
   margin-left: 30px;
 }
+

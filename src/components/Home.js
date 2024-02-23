@@ -1,22 +1,21 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom'; // Remove BrowserRouter import
 import Nav from './Nav';
 import Resume from './Resume';
 import Contact from './Contact';
+import TextBox from './TextBox';
 
 function Home() {
   return (
-    <Router>
-      <div className="Home">
-        <Nav />
-        <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </div>
-    </Router>
+    <div className="Home">
+      <Nav />
+      <Routes>
+        <Route path="*" element={<TextBox />} /> 
+        <Route path="/resume/*" element={<Resume />} />
+        <Route path="/contact/*" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
 
