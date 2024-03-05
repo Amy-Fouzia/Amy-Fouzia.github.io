@@ -1,107 +1,60 @@
-body {
-  background-color: #96939B;
-  background-image: url('./images/swirls.jpg');
-  background-size: cover; 
-  background-position: center; 
-  padding: 20px; 
-}
-
 @font-face {
   font-family: 'EconomicConditions';
   src: url('./fonts/EconomicConditions.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Borella';
-  src: url('./fonts/Borella.ttf') format('truetype');
+html {
+  height: 100%;
 }
 
-.title-container {
+body {
+  background-image: url('./images/swirls.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 20px 80px; 
+}
+
+.App {
+  position: relative;
+  margin-top: 10px;
+}
+
+.nav-container {
   display: flex;
+  justify-content: left; 
   align-items: center;
-  margin-left: 5%;
+}
+
+.nav {
+  padding: 25px;
 }
 
 .title {
-  margin-right: 10px;
-  font-family: 'EconomicConditions', sans-serif;
-  font-size: 500%;
-  color: black;
-  text-shadow: 
-    .5px 0 black, 
-    0 .5px black, 
-    -.5px 0 black, 
-    0 -.5px black;
   padding: 10px 6px; 
-  border-radius: 200px; 
-  background-color: #861c1c;
-  box-shadow: 
-    3px 0 black, 
-    0 3px black, 
-    -3px 0 black, 
-    0 -3px black;
-}
-
-.navOval {
-  font-family: 'Borella', sans-serif;
-  font-size:x-large;
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-  width: 188px;
-  height: 90px;
-  background-color: #861c1c;
-  border-radius: 100px;
-  margin-left: 10px; /* Adjust spacing between title and navOvals */
-  box-shadow: 
-    3px 0 black, 
-    0 3px black, 
-    -3px 0 black, 
-    0 -3px black;
-  color: inherit; /* Inherit the color from the parent element */
-  text-decoration: none; /* Remove underline */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: color 0.3s;
-}
-
-.navOval:hover {
-  color: white; 
-}
-
-.navOval.active {
-  position: relative;
-  z-index: 1;
+  border-radius: 80px; 
+  font-family: 'EconomicConditions', sans-serif;
+  font-size: 400%;
+  color: black;
+  background-color: #829bc4;
 }
 
 .textBox {
   position: absolute;
-  top: 19%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 84.5%;
-  height: 500px;
-  background-color: #e0d8cb;
-  z-index: -1;
-  border-radius: 10px;
+  width: 97%;
+  min-height: 360px;
 }
 
 .textBox-content {
-  margin-top: 70px;
-  margin-left: 30px;
+
 }
 
-.dropdown-arrow {
-  cursor: pointer;
-  margin-right: 5px; /* Adjust spacing as needed */
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-/* Define arrow direction */
-.right {
-  transform: rotate(0deg);
-  transition: transform 0.3s ease;
-}
 
-.down {
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
-}

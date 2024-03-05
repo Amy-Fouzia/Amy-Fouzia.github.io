@@ -1,4 +1,5 @@
 import React from 'react';
+import { Paper } from '@mui/material'; // Import Paper from MUI
 import '../App.css';
 import Dropdown from './Dropdown'; // Import the Dropdown component
 import { NYU } from './Data'; // Adjust the path as needed
@@ -18,9 +19,13 @@ const TextBox = ({ text }) => {
   }
 
   return (
-    <div className="textBox">
+    <Paper
+      elevation={3}
+      className="textBox"
+      sx={{ backgroundColor: '#829bc4', padding: '20px' }} // Set custom styling for Paper
+    >
       <div className="textBox-content">{renderedText}</div>
-    </div>
+    </Paper>
   );
 };
 

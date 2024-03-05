@@ -1,23 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
+import { Button, ButtonGroup } from '@mui/material';
 import '../App.css';
 
 const Nav = () => {
   return (
-    <div className="container">
-      <div className="title-container">
+    <div>
+      <div className="nav-container">
         <div className="title">
-          Amy F
+          Amy Fouzia
         </div>
-        <Link to="" className="navOval">
-          <span>Home</span>
-        </Link>
-        <Link to="/Resume" className="navOval">
-          <span>Resume</span>
-        </Link>
-        <Link to="/Contact" className="navOval">
-          <span>Contact</span>
-        </Link>
+        <ButtonGroup className="nav" variant="text" aria-label="navigation buttons">
+          <Button component={Link} to="/" color="inherit" style={{ fontSize: '100%' }}>Home</Button>
+          <Button component={Link} to="/Resume" color="inherit" style={{ fontSize: '100%' }}>Resume</Button>
+          <Button component={Link} to="/Contact" color="inherit" style={{ fontSize: '100%' }}>Contact</Button>
+        </ButtonGroup>
       </div>
     </div>
   );
