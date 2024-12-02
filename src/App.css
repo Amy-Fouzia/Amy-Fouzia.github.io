@@ -3,15 +3,16 @@
   src: url('./fonts/EconomicConditions.ttf') format('truetype');
 }
 
+@media only screen and (min-width: 768px) {
+
 html {
-  height: 100%;
+  height: 110%;
 }
 
 body {
-  background-image: url('./images/swirls.png');
+  background-image: url('./images/bubbles.png');
   background-size: cover; 
   background-position: center; 
-  background-repeat: no-repeat;
   padding: 20px 80px; 
 }
 
@@ -24,10 +25,11 @@ body {
   display: flex;
   justify-content: left; 
   align-items: center;
+  color: aliceblue;
 }
 
 .nav {
-  padding: 25px;
+  padding: 45px 0px 45px 30px;
 }
 
 .title {
@@ -35,18 +37,26 @@ body {
   border-radius: 80px; 
   font-family: 'EconomicConditions', sans-serif;
   font-size: 400%;
-  color: black;
+  color: aliceblue;
   background-color: #829bc4;
+}
+
+.bluefish {
+  height: 90px;
+  width: auto;
+  padding: 0px 0px 20px 0px;
+}
+
+.pinkfish {
+  height: 90px;
+  width: auto;
+  padding: 25px 0px 0px 30px;
 }
 
 .textBox {
   position: absolute;
   width: 97%;
-  min-height: 360px;
-}
-
-.textBox-content {
-
+  min-height: 300px;
 }
 
 .dropdown-container {
@@ -57,4 +67,53 @@ body {
   margin-right: 15px;
 }
 
+.AboutMe {
+  display: flex; 
+}
 
+.MyImage {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.info-container {
+  padding: 0 20px;
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 0px 25px;
+  color:aliceblue;
+  font-size: large;
+}
+
+.audio {
+  display: flex;
+  align-items: center; 
+}
+
+.progress-bar {
+  width: 100px; 
+  background-color: aliceblue; 
+}
+
+.MuiLinearProgress-root {
+  background-color: rgb(118, 184, 242); 
+}
+
+.MuiLinearProgress-barColorPrimary {
+  background-color: aliceblue; 
+}
+
+.MuiSvgIcon-root {
+  color: aliceblue; /* Change to the desired color */
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  html{
+    display: none;
+  }
+}
