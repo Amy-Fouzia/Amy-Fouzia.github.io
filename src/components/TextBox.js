@@ -3,7 +3,7 @@ import { Paper, IconButton, LinearProgress } from '@mui/material';
 import { PlayCircleOutline } from '@mui/icons-material';
 import '../App.css';
 import Dropdown from './Dropdown';
-import { NYU, L3Harris, Cooper, Subway, Games, Contact, AboutMe } from './Data';
+import { EDUCATION, EXPERIENCE, PROJECTS, SKILLS, ABOUTME } from './Data';
 import me from '../images/me.jpg';
 import recording from '../audio/myName.m4a'; 
 
@@ -42,7 +42,7 @@ const TextBox = ({ text }) => {
     renderedText = (
       <div className='AboutMe'>
         
-        <img src={me} alt="Me" className="MyImage"/>
+        <img src={me} alt="Me" style={{width: '30%', height: 'auto',}} className="MyImage"/>
           
         <div className="info-container">
           <p>
@@ -60,19 +60,36 @@ const TextBox = ({ text }) => {
               </div>
             <br></br>
 
-            {AboutMe.About} 
-
+            {ABOUTME.AboutOne}
+            <br></br>
+            <br></br>
+            {ABOUTME.AboutTwo}
+            <br></br>
+            <br></br>
+            {ABOUTME.email}
+            &nbsp;or connect with me on <a href="https://www.linkedin.com/in/amy-fouzia/" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
           </p>
         </div>
 
       </div>
     );
   } else if (text === 'resumeText') {
-    renderedText = <Dropdown title="EDUCATION" data={NYU} />;
-  } else if (text === 'contactText') {
-    renderedText = 'This is contact text.';
+    renderedText = (
+      <div className='Resume'>
+        <Dropdown title="EDUCATION" data={EDUCATION} />
+        <Dropdown title="EXPERIENCE" data={EXPERIENCE} />
+        <Dropdown title="PROJECTS" data={PROJECTS} />
+        <Dropdown title="SKILLS/INTERESTS" data={SKILLS} />
+      </div>
+    );
   } else if (text === 'projectText') {
     renderedText = 'This is project text.';
+  } else if (text === 'hobbiesText') {
+    renderedText = (
+      <div className='Hobbies'>
+        hobby text
+      </div>
+    );
   } else {
     renderedText = 'No text specified.';
   }

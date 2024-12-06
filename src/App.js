@@ -12,8 +12,8 @@ function App() {
         <Routes>
           <Route path="" element={<TextBox text='homeText'/>} />
           <Route path="/resume/*" element={<TextBox text='resumeText'/>} />
-          <Route path="/contact/*" element={<TextBox text='contactText'/>} />
           <Route path="/projects/*" element={<TextBox text='projectText'/>} />
+          <Route path="/hobbies/*" element={<TextBox text='hobbiesText'/>} />
         </Routes>
       </div>
     </Router>
