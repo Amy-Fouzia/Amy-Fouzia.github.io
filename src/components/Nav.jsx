@@ -15,8 +15,8 @@ const Nav = () => {
         <ButtonGroup className="nav" variant="text" aria-label="navigation buttons">
           <Button component={Link} to="/" color="inherit" style={{ fontSize: '100%' }}>Home</Button>
           <Button component={Link} to="/Resume" color="inherit" style={{ fontSize: '100%' }}>Resume</Button>
-          <Button component={Link} to="/Contact" color="inherit" style={{ fontSize: '100%' }}>Contact</Button>
           <Button component={Link} to="/Projects" color="inherit" style={{ fontSize: '100%' }}>Projects</Button>
+          <Button component={Link} to="/Hobbies" color="inherit" style={{ fontSize: '100%' }}>Hobbies</Button>
         </ButtonGroup>
         <img src={blue} alt="fish" className="bluefish"/>
         <img src={pink} alt="fish" className="pinkfish"/>
