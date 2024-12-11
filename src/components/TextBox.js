@@ -6,6 +6,7 @@ import Dropdown from './Dropdown';
 import { EDUCATION, EXPERIENCE, PROJECTS, SKILLS, ABOUTME } from './Data';
 import me from '../images/me.jpg';
 import recording from '../audio/myName.m4a'; 
+import GitHubCard from './GitHubCard';
 
 const TextBox = ({ text }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -83,7 +84,25 @@ const TextBox = ({ text }) => {
       </div>
     );
   } else if (text === 'projectText') {
-    renderedText = 'This is project text.';
+    renderedText = (
+      <div className='Project'>
+        <h1 style={{ color: 'aliceblue' }} >My GitHub Projects</h1>
+        <h3 style={{ color: 'aliceblue' }} >Database</h3>
+        <GitHubCard username= "Amy-Fouzia" repoName="Grade-Portal" />
+        <h3 style={{ color: 'aliceblue' }} >Group Project</h3>
+        <GitHubCard username= "FJada" repoName="JALT" />
+        <GitHubCard username= "FJada" repoName="JALT-Frontend" />
+        <h3 style={{ color: 'aliceblue' }} >OpenGL/C++ Games</h3>
+        <GitHubCard username= "Amy-Fouzia" repoName="Fireboy-and-Watergirl" />
+        <GitHubCard username= "Amy-Fouzia" repoName="Platformer" />
+        <GitHubCard username= "Amy-Fouzia" repoName="Rise-of-the-AI" />
+        <GitHubCard username= "Amy-Fouzia" repoName="Lunar-Lander" />
+        <GitHubCard username= "Amy-Fouzia" repoName="Pong-Clone" />
+        <h3 style={{ color: 'aliceblue' }} >WebApps</h3>
+        <GitHubCard username= "Amy-Fouzia" repoName="Gallery" />
+        <GitHubCard username= "Amy-Fouzia" repoName="Bored" />
+      </div>
+    );
   } else if (text === 'hobbiesText') {
     renderedText = (
       <div className='Hobbies'>
