@@ -10,7 +10,7 @@ function App() {
       <Nav></Nav>
       <div className="App">
         <Routes>
-          <Route path="" element={<TextBox text='homeText'/>} />
+          <Route path="" element={<TextBox className="homeBox" text='homeText'/>} />
           <Route path="/resume/*" element={<TextBox text='resumeText'/>} />
           <Route path="/projects/*" element={<TextBox text='projectText'/>} />
           <Route path="/hobbies/*" element={<TextBox text='hobbiesText'/>} />

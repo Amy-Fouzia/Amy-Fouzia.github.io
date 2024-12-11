@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-image: url('./images/bubbles.png');
+  background-image: url('./images/background.png');
   background-size: cover; 
   background-position: center; 
   padding: 20px 80px; 
@@ -54,9 +54,9 @@ body {
 }
 
 .textBox {
-  position: absolute;
   width: 97%;
-  min-height: 300px;
+  min-height: 230px;
+  margin-bottom: 20px;
 }
 
 .dropdown-container {
@@ -78,7 +78,6 @@ body {
 }
 
 .info-container {
-  padding: 0 20px;
   flex: 1; 
   display: flex;
   flex-direction: column; 
@@ -107,7 +106,7 @@ body {
 }
 
 .MuiSvgIcon-root {
-  color: aliceblue; /* Change to the desired color */
+  color: aliceblue;
 }
 
 }
