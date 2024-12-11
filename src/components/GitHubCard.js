@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Card, CardContent, Typography, CardActions, Button, CircularProgress } from '@mui/material';
+const token = process.env.REACT_APP_GITHUB_TOKEN;
 
 const GitHubCard = ({ username, repoName }) => {
   const [repo, setRepo] = useState(null);
@@ -14,7 +15,7 @@ const GitHubCard = ({ username, repoName }) => {
           `https://api.github.com/repos/${username}/${repoName}`,
           {
             headers: {
-              Authorization: `Bearer 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`,
+              Authorization: `Bearer ${token}`,
             },
           }
         );
