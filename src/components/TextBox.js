@@ -6,6 +6,7 @@ import Dropdown from './Dropdown';
 import { EDUCATION, EXPERIENCE, PROJECTS, SKILLS, ABOUTME } from './Data';
 import me from '../images/me.jpg';
 import recording from '../audio/myName.m4a'; 
+import GitHubCard from './GitHubCard';
 
 const TextBox = ({ text }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -83,7 +84,31 @@ const TextBox = ({ text }) => {
       </div>
     );
   } else if (text === 'projectText') {
-    renderedText = 'This is project text.';
+    renderedText = (
+      <div>
+        <h1 style={{color:'aliceblue'}}>My GitHub Projects</h1>
+
+        <div>
+          <h3 style={{color:'aliceblue'}}>Database</h3>
+          <GitHubCard username="Amy-Fouzia" repoName="Grade-Portal" sx={{ width: '500px' }} />
+
+          <h3 style={{color:'aliceblue'}}>Group Project</h3>
+          <GitHubCard username="FJada" repoName="JALT" sx={{ width: '500px' }} />
+          <GitHubCard username="FJada" repoName="JALT-Frontend" sx={{ width: '500px' }} />
+
+          <h3 style={{color:'aliceblue'}}>OpenGL/C++ Games</h3>
+          <GitHubCard username="Amy-Fouzia" repoName="Fireboy-and-Watergirl" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Platformer" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Rise-of-the-AI" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Lunar-Lander" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Pong-Clone" sx={{ width: '500px' }} />
+
+          <h3 style={{color:'aliceblue'}}>WebApps</h3>
+          <GitHubCard username="Amy-Fouzia" repoName="Gallery" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Bored" sx={{ width: '500px' }} />
+        </div>
+      </div>
+    );
   } else if (text === 'hobbiesText') {
     renderedText = (
       <div className='Hobbies'>
