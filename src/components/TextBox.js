@@ -85,22 +85,28 @@ const TextBox = ({ text }) => {
     );
   } else if (text === 'projectText') {
     renderedText = (
-      <div className='Project'>
-        <h1 style={{ color: 'aliceblue' }} >My GitHub Projects</h1>
-        <h3 style={{ color: 'aliceblue' }} >Database</h3>
-        <GitHubCard username= "Amy-Fouzia" repoName="Grade-Portal" />
-        <h3 style={{ color: 'aliceblue' }} >Group Project</h3>
-        <GitHubCard username= "FJada" repoName="JALT" />
-        <GitHubCard username= "FJada" repoName="JALT-Frontend" />
-        <h3 style={{ color: 'aliceblue' }} >OpenGL/C++ Games</h3>
-        <GitHubCard username= "Amy-Fouzia" repoName="Fireboy-and-Watergirl" />
-        <GitHubCard username= "Amy-Fouzia" repoName="Platformer" />
-        <GitHubCard username= "Amy-Fouzia" repoName="Rise-of-the-AI" />
-        <GitHubCard username= "Amy-Fouzia" repoName="Lunar-Lander" />
-        <GitHubCard username= "Amy-Fouzia" repoName="Pong-Clone" />
-        <h3 style={{ color: 'aliceblue' }} >WebApps</h3>
-        <GitHubCard username= "Amy-Fouzia" repoName="Gallery" />
-        <GitHubCard username= "Amy-Fouzia" repoName="Bored" />
+      <div>
+        <h1 style={{color:'aliceblue'}}>My GitHub Projects</h1>
+
+        <div>
+          <h3 style={{color:'aliceblue'}}>Database</h3>
+          <GitHubCard username="Amy-Fouzia" repoName="Grade-Portal" sx={{ width: '500px' }} />
+
+          <h3 style={{color:'aliceblue'}}>Group Project</h3>
+          <GitHubCard username="FJada" repoName="JALT" sx={{ width: '500px' }} />
+          <GitHubCard username="FJada" repoName="JALT-Frontend" sx={{ width: '500px' }} />
+
+          <h3 style={{color:'aliceblue'}}>OpenGL/C++ Games</h3>
+          <GitHubCard username="Amy-Fouzia" repoName="Fireboy-and-Watergirl" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Platformer" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Rise-of-the-AI" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Lunar-Lander" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Pong-Clone" sx={{ width: '500px' }} />
+
+          <h3 style={{color:'aliceblue'}}>WebApps</h3>
+          <GitHubCard username="Amy-Fouzia" repoName="Gallery" sx={{ width: '500px' }} />
+          <GitHubCard username="Amy-Fouzia" repoName="Bored" sx={{ width: '500px' }} />
+        </div>
       </div>
     );
   } else if (text === 'hobbiesText') {
